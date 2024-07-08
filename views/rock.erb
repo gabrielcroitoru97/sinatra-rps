@@ -1,0 +1,12 @@
+<h2>We played rock!</h2>
+<h2>They played <%= @hand %>!</h2>
+
+
+<% if @hand == "rock" %>
+<h2>We tied!</h2>
+<% elsif @hand == "scissors" %>
+<h2>We won!</h2>
+<% else %>
+<h2>We lost!</h2>
+<% end %>
+<div><a href="/">Rules</a></div>
